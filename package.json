@@ -1,7 +1,7 @@
 {
-  "name": "erc721a",
+  "name": "wod-smart-contract",
   "version": "2.2.0",
-  "description": "ERC721A contract for Solidity",
+  "description": "WoD smart contract repo",
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json",
@@ -16,7 +16,8 @@
     "lint:sol": "prettier --write \"contracts/**/*.sol\""
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.4.2"
+    "@openzeppelin/contracts": "^4.4.2",
+    "erc721a": "^2.2.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
@@ -35,12 +36,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chiru-labs/ERC721A.git"
+    "url": "git+https://github.com/World-of-Doomens/wod-smart-contract.git"
   },
   "author": "chiru-labs",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chiru-labs/ERC721A/issues"
+    "url": "https://github.com/World-of-Doomens/wod-smart-contract/issues"
   },
-  "homepage": "https://github.com/chiru-labs/ERC721A#readme"
+  "homepage": "https://github.com/World-of-Doomens/wod-smart-contract#readme"
 }
