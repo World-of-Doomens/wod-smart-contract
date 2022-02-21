@@ -4,7 +4,6 @@ pragma solidity 0.8.11;
 import {MerkleProof} from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "erc721a/contracts/ERC721A.sol";
-import "./interface/IWOD.sol";
 
 contract WoD is ERC721A, Ownable {
     using MerkleProof for bytes32[];
