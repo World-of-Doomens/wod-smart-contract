@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require('@nomiclabs/hardhat-ethers');
+require("@nomiclabs/hardhat-etherscan");
 
 if (process.env.REPORT_GAS) {
   require("hardhat-gas-reporter");
@@ -32,4 +33,7 @@ module.exports = {
     gasPrice: 100,
     showTimeSpent: true,
   },
+  etherscan: {
+    apiKey: process.env.API_KEY
+  }
 };

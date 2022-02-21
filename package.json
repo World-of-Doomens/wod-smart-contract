@@ -16,6 +16,7 @@
     "lint:sol": "prettier --write \"contracts/**/*.sol\""
   },
   "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.1",
     "@openzeppelin/contracts": "^4.4.2",
     "erc721a": "^2.2.0",
     "keccak256": "^1.0.6",
