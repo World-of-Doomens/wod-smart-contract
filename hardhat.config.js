@@ -5,10 +5,19 @@ if (process.env.REPORT_GAS) {
   require("hardhat-gas-reporter");
 }
 
+const privateKey = process.env.PRIVATE_KEY || null
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
+  defaultNetwork: "rinkeby",
+  networks: {
+    rinkeby: {
+      url: "https://eth-rinkeby.alchemyapi.io/v2/OkAUbUpxjIAjgxYYKMYM39nL_OxTW4p2",
+      accounts: [privateKey]
+    }
+  },
   solidity: {
     version: "0.8.11",
     settings: {
